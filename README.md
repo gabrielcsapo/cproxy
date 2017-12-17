@@ -14,5 +14,5 @@ npm install cproxy -g
 ## Usage
 
 ```
-cproxy
+cproxy --port 5050
 ```

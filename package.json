@@ -1,11 +1,13 @@
 {
   "name": "cproxy",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "⚡️ A high speed proxy cache for all things http",
   "main": "index.js",
   "scripts": {
     "test": "tape test",
-    "coverage": "tap test --coverage --coverage-report=lcov"
+    "lint": "eslint .",
+    "coverage": "tap test --coverage --coverage-report=lcov",
+    "generate-docs": "tryitout"
   },
   "bin": {
     "cproxy": "./bin/cproxy.js"
@@ -21,8 +23,10 @@
   },
   "homepage": "https://github.com/gabrielcsapo/cproxy#readme",
   "devDependencies": {
+    "eslint": "^4.13.1",
     "tap": "^10.7.2",
-    "tape": "^4.8.0"
+    "tape": "^4.8.0",
+    "tryitout": "^1.2.2"
   },
   "dependencies": {
     "mongoose": "^4.11.9"
